@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6adce38a99205f9439f7ad690ba8c22b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_Target: {instanceID: 0}
+  - ImageTool: {instanceID: 0}
+  - Block: {fileID: 206170743598819591, guid: 54d41807f827eb84b9b7d3ed91fb30c8, type: 3}
+  - Marker: {fileID: 2930757480858542755, guid: d1af2303011ebe641b2fe9fa19c89f74, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

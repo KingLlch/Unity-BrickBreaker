@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DestroyBall
   - Block
+  - Marker
   layers:
   - Default
   - TransparentFX
