@@ -22,11 +22,9 @@ public class LevelEditor : EditorTool
     private bool pointSelected = false;
     private bool isRotating = false;
 
-    
-
     public override GUIContent toolbarIcon
     {
-        get 
+        get
         {
             return new GUIContent
             {
@@ -43,7 +41,7 @@ public class LevelEditor : EditorTool
 
         RightClickMouse(_event);
         LeftClickMouse(_event);
-        MouseDrag(_event);
+        DrawLine(_event);
     }
 
     private void RightClickMouse(Event _event)
@@ -68,12 +66,11 @@ public class LevelEditor : EditorTool
         }
     }
 
-    private void MouseDrag(Event _event)
+    private void DrawLine(Event _event)
     {
-        if (_event.type == EventType.MouseMove && pointSelected && !isRotating)
+        if (pointSelected)
         {
             Vector2 mousePosition = HandleUtility.GUIPointToWorldRay(_event.mousePosition).origin;
-            Handles.color = Color.red;
 
             Handles.DrawLine(selectedPoint, mousePosition);
             SceneView.RepaintAll();
