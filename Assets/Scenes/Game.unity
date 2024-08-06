@@ -1076,6 +1076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 8190364221862979499, guid: f5cefd341ac3f5c428931fcfbfd877d4, type: 3}
   player: {fileID: 22316695}
+  upgrade: {fileID: 3971888584004101213, guid: deccb50218ac6c341aeac665d55806ff, type: 3}
   box:
   - {fileID: 421286720}
   - {fileID: 1938166979}

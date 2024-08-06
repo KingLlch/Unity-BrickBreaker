@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject ball;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject upgrade;
     [SerializeField] private GameObject[] box;
 
     private GameObject ballInGame;
@@ -28,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     public bool IsGameNeedStart;
 
+    private int PointsUpgrade;
+    private int PointsToUpgrade = 5;
     private int ValueBallInGame;
     private int ValueBalls = 5;
 
@@ -104,5 +107,18 @@ public class GameManager : MonoBehaviour
 
             IsGameNeedStart = true;
         }
+    }
+
+    public void DestroyBlock(Transform block)
+    {
+        PointsUpgrade++;
+        if (PointsUpgrade >= PointsToUpgrade)
+            SpawnUprade(block);
+    }
+
+    public void SpawnUprade(Transform block)
+    {
+       GameObject upgrage = Instantiate(upgrade, block.position,Quaternion.identity,null);
+        upgrage.GetComponent<Upgrade>().Initialize();
     }
 }

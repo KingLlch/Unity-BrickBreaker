@@ -12,6 +12,7 @@ public class Block : MonoBehaviour
 
         if (healthBlock <= 0)
         {
+            GameManager.Instance.DestroyBlock(transform);
             Destroy(gameObject);
         }
     }
