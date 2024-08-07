@@ -29,5 +29,13 @@ public class MoveManager : MonoBehaviour
         if ((InputController.Instance.InputMove.x * speed + _handle.transform.position.x + _handle.transform.localScale.x/2 < screenTopRight.x) && 
             (InputController.Instance.InputMove.x * speed + _handle.transform.position.x - _handle.transform.localScale.x/2 > screenBottomLeft.x))
             _handle.transform.position += new Vector3 (InputController.Instance.InputMove.x, 0, 0) * speed;
+
+        else
+        {
+            if (InputController.Instance.InputMove.x * speed + _handle.transform.position.x + _handle.transform.localScale.x / 2 < screenTopRight.x)
+                _handle.transform.position = new Vector3(screenTopRight.x - _handle.transform.localScale.x / 2, _handle.transform.position.y, _handle.transform.position.z);
+            else if (InputController.Instance.InputMove.x * speed + _handle.transform.position.x - _handle.transform.localScale.x / 2 > screenBottomLeft.x)
+                _handle.transform.position = new Vector3(screenBottomLeft.x + _handle.transform.localScale.x / 2, _handle.transform.position.y, _handle.transform.position.z);
+        }
     }
 }

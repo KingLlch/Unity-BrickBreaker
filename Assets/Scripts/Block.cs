@@ -3,7 +3,7 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer sprite;
-    private int healthBlock = 1;
+    [SerializeField] private int healthBlock = 1;
 
     public void ChangeHealth(int ballDamage)
     {

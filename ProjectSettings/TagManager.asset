@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - DestroyBall
   - Block
   - Marker
+  - EndScreen
   layers:
   - Default
   - TransparentFX
@@ -17,8 +17,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Player
+  - Ball
   - 
   - 
   - 

@@ -11,9 +11,9 @@ public class Ball : MonoBehaviour
             collision.gameObject.GetComponent<Block>().ChangeHealth(ballDamage);
         }
 
-        if (collision.transform.tag == "DestroyBall")
+        if (collision.transform.tag == "EndScreen")
         {
-            GameManager.Instance.ChangeBallInGame();
+            GameManager.Instance.ChangeBallInGame(gameObject);
             Destroy(gameObject);
         }
     }

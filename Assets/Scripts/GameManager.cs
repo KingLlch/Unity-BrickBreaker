@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,21 +17,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    [SerializeField] private GameObject ball;
+    public GameObject ball;
+    public GameObject ballsGameObject;
+
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject upgrade;
     [SerializeField] private GameObject[] box;
 
-    private GameObject ballInGame;
     private Camera mainCamera;
+    private GameObject newBall;
     private Rigidbody2D ballRigitbody;
 
     public bool IsGameNeedStart;
 
     private int PointsUpgrade;
-    private int PointsToUpgrade = 5;
-    private int ValueBallInGame;
-    private int ValueBalls = 5;
+    private int PointsToUpgrade = 3;
+
+    private int Life = 5;
+
+    public List<GameObject> balls;
 
     private void Awake()
     {
@@ -47,10 +50,11 @@ public class GameManager : MonoBehaviour
     {
         IsGameNeedStart = true;
 
-        ballInGame = Instantiate(ball);
-        ballRigitbody = ballInGame.GetComponent<Rigidbody2D>();
+        newBall = Instantiate(ball, Vector2.zero, Quaternion.identity, ballsGameObject.transform);
+        balls.Add(newBall);
+        ballRigitbody = newBall.GetComponent<Rigidbody2D>();
 
-        UIManager.Instance.ChangeValueBalls(ValueBalls);
+        UIManager.Instance.ChangeValueBalls(Life);
 
         ChangeBoxSize();
     }
@@ -59,15 +63,15 @@ public class GameManager : MonoBehaviour
     {
         if (IsGameNeedStart)
         {
-            ballInGame.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 0.5f);
+            newBall.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 0.5f);
         }
     }
 
     private void StartGame()
     {
         IsGameNeedStart = false;
-        ValueBallInGame = 1;
-        ballRigitbody.AddForce(new Vector2(0, 17f), ForceMode2D.Impulse);
+
+        ballRigitbody.AddForce(new Vector2(0, 7f), ForceMode2D.Impulse);
     }
 
     private void ChangeBoxSize()
@@ -87,23 +91,24 @@ public class GameManager : MonoBehaviour
         box[2].transform.position = new Vector3(screenBottomLeft.x - wallSize / 2, 0, 0);
         box[3].transform.position = new Vector3(screenTopRight.x + wallSize / 2, 0, 0);
 
-        box[0].transform.localScale = new Vector3(cameraWidth + cameraWidth/5, wallSize, 1);
-        box[1].transform.localScale = new Vector3(cameraWidth + cameraWidth/5, wallSize, 1);
+        box[0].transform.localScale = new Vector3(cameraWidth + cameraWidth / 5, wallSize, 1);
+        box[1].transform.localScale = new Vector3(cameraWidth + cameraWidth / 5, wallSize, 1);
         box[2].transform.localScale = new Vector3(wallSize, cameraHeight, 1);
         box[3].transform.localScale = new Vector3(wallSize, cameraHeight, 1);
     }
 
-    public void ChangeBallInGame()
+    public void ChangeBallInGame(GameObject ball)
     {
-        ValueBallInGame--;
+        balls.Remove(ball);
 
-        if (ValueBallInGame == 0)
+        if (balls.Count == 0)
         {
-            ValueBalls--;
-            UIManager.Instance.ChangeValueBalls(ValueBalls);
+            Life--;
+            UIManager.Instance.ChangeValueBalls(Life);
 
-            ballInGame = Instantiate(ball);
-            ballRigitbody = ballInGame.GetComponent<Rigidbody2D>();
+            newBall = Instantiate(ball);
+            balls.Add(newBall);
+            ballRigitbody = newBall.GetComponent<Rigidbody2D>();
 
             IsGameNeedStart = true;
         }
@@ -113,12 +118,28 @@ public class GameManager : MonoBehaviour
     {
         PointsUpgrade++;
         if (PointsUpgrade >= PointsToUpgrade)
+        {
+            PointsUpgrade = 0;
             SpawnUprade(block);
+        }
     }
 
     public void SpawnUprade(Transform block)
     {
-       GameObject upgrage = Instantiate(upgrade, block.position,Quaternion.identity,null);
+        GameObject upgrage = Instantiate(upgrade, block.position, Quaternion.identity, null);
         upgrage.GetComponent<Upgrade>().Initialize();
     }
+
+    public void ChangeLife(int change)
+    {
+        Life += change;
+        UIManager.Instance.ChangeValueBalls(Life);
+    }
+
+    public void ChangeSizePlatform(float change, bool increase)
+    {
+        if ((player.transform.localScale.x + change <= 2 && increase) ||( player.transform.localScale.x - change >= 0.2 && !increase))
+            player.transform.localScale = new Vector3(player.transform.localScale.x + change, player.transform.localScale.y, player.transform.localScale.z);
+    }
+
 }
