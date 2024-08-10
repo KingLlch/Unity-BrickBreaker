@@ -16,6 +16,4 @@ public class Block : MonoBehaviour
 
         BlocksManager.Instance.Portal(ball, this);
     }
-
-
 }

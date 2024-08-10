@@ -3792,7 +3792,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 567
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -4952,7 +4952,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 13.136415
 --- !u!50 &8022576065176874188
 Rigidbody2D:
   serializedVersion: 4
@@ -4992,3 +4992,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa68eb4b044c4a9f13b5f7e755f3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballDamage: 1

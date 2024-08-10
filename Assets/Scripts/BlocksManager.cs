@@ -1,8 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.U2D;
 
 public class BlocksManager : MonoBehaviour
 {
@@ -31,7 +28,7 @@ public class BlocksManager : MonoBehaviour
         if ((int)block.typeBlock == 2)
         {
             ball.transform.position = block.anotherPortal.transform.position;
-            Destroy(gameObject);
+            Destroy(block.gameObject);
             Destroy(block.anotherPortal);
         }
     }
@@ -40,6 +37,7 @@ public class BlocksManager : MonoBehaviour
     {
         block.healthBlock -= ballDamage;
         block.sprite.color = new Color(block.sprite.color.r + 0.1f * ballDamage, block.sprite.color.g + 0.1f * ballDamage, block.sprite.color.b);
+        
         if (block.healthBlock <= 0)
         {
             DestroyBlock(block);
@@ -51,7 +49,7 @@ public class BlocksManager : MonoBehaviour
         {
             block.isDetonated = true;
 
-            Collider2D[] BlocksColliders = Physics2D.OverlapCircleAll(transform.position, (transform.localScale * transform.GetComponent<BoxCollider2D>().size).x);
+            Collider2D[] BlocksColliders = Physics2D.OverlapCircleAll(block.transform.position, (block.transform.localScale * block.GetComponent<BoxCollider2D>().size).x);
             int BlocksCollidersLength = BlocksColliders.Length;
 
             for (int i = BlocksCollidersLength - 1; i >= 0; i--)
@@ -64,9 +62,9 @@ public class BlocksManager : MonoBehaviour
             }
         }
 
-        EffectsManager.Instance.Burst(transform.position);
-        GameManager.Instance.DestroyBlock(transform);
-        Destroy(gameObject);
+        EffectsManager.Instance.Burst(block.transform.position);
+        GameManager.Instance.DestroyBlock(block.transform);
+        Destroy(block.gameObject);
     }
 
     public void NextLevelBlock(Block block)
