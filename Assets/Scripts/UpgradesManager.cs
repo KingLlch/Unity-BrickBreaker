@@ -84,7 +84,7 @@ public class UpgradesManager : MonoBehaviour
         {
             GameObject newBall = Instantiate(GameManager.Instance.ball, GameManager.Instance.balls[i].transform.position, Quaternion.identity, GameManager.Instance.ballsGameObject.transform);
             Vector2 force = GameManager.Instance.balls[i].GetComponent<Rigidbody2D>().velocity;
-            if (force == Vector2.one)
+            if (force.x + force.y < 7)
                 force = Vector2.up * 7;
 
             newBall.transform.localScale = GameManager.Instance.balls[0].transform.localScale;

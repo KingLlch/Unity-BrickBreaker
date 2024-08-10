@@ -231,6 +231,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 26201543}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &26201543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -376,6 +379,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 111256852}
   healthBlock: 2
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &111256852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -521,6 +527,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 118701696}
   healthBlock: 10
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &118701696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -824,6 +833,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 170518844}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &170518844
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1127,6 +1139,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 174184632}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &174184632
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1272,6 +1287,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 220957904}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &220957904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1472,6 +1490,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 236521199}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &236521199
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1617,6 +1638,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 269978547}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &269978547
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1793,6 +1817,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 384777873}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &384777873
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1938,6 +1965,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 417306797}
   healthBlock: 2
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &417306797
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2241,6 +2271,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 461458662}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &461458662
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2329,6 +2362,9 @@ Transform:
   - {fileID: 1830357386}
   - {fileID: 227571490}
   - {fileID: 1393495150}
+  - {fileID: 1429454431}
+  - {fileID: 1791877346}
+  - {fileID: 661315262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &488886102
@@ -2424,6 +2460,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 488886106}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &488886106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2569,6 +2608,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 502104329}
   healthBlock: 10
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &502104329
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2851,6 +2893,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 540078029}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &540078029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3101,6 +3146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 609622454}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &609622454
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3328,6 +3376,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 619816684}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &619816684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3473,6 +3524,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 642785133}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &642785133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3525,6 +3579,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &661315261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 661315262}
+  - component: {fileID: 661315263}
+  m_Layer: 0
+  m_Name: BlocksManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &661315262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661315261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 471198524}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &661315263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661315261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b042b8634d53d40ac7821afdaa5a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &721957307
 GameObject:
   m_ObjectHideFlags: 0
@@ -3618,6 +3716,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 721957311}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &721957311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3763,6 +3864,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 743918970}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &743918970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3908,6 +4012,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 761507810}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &761507810
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4053,6 +4160,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 772179219}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &772179219
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4198,6 +4308,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 793679310}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &793679310
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4343,6 +4456,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 795112905}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &795112905
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4488,6 +4604,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 812030558}
   healthBlock: 4
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &812030558
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4633,6 +4752,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 836943133}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &836943133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4778,6 +4900,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 869421256}
   healthBlock: 2
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &869421256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4923,6 +5048,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 880644564}
   healthBlock: 2
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &880644564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5068,6 +5196,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 885296102}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &885296102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5250,6 +5381,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 900655258}
   healthBlock: 2
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &900655258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5395,6 +5529,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 920902147}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &920902147
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5540,6 +5677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 925348129}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &925348129
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5685,6 +5825,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 972858162}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &972858162
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5964,6 +6107,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1065825396}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1065825396
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6109,6 +6255,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1081270070}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1081270070
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6254,6 +6403,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1093465407}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1093465407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6399,6 +6551,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1132136479}
   healthBlock: 2
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1132136479
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6639,6 +6794,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1164028092}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1164028092
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6784,6 +6942,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1179427251}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1179427251
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6979,6 +7140,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1193393084}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1193393084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7124,6 +7288,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1205591228}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1205591228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7269,6 +7436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1269089890}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1269089890
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7414,6 +7584,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1283333991}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1283333991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7559,6 +7732,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1304516916}
   healthBlock: 10
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1304516916
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7704,6 +7880,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1305745763}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1305745763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7849,6 +8028,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1337293394}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1337293394
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7994,6 +8176,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1385568819}
   healthBlock: 2
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1385568819
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8130,6 +8315,51 @@ Transform:
   - {fileID: 2075449601}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1429454430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429454431}
+  - component: {fileID: 1429454432}
+  m_Layer: 0
+  m_Name: EffectsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1429454431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429454430}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 471198524}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1429454432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429454430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee8bce38ade84d4bbbf8a6d789e2acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  burstParticle: {fileID: 5600881600625679428, guid: feaf9bb7ca828724c9d7f0a538ffa6d0, type: 3}
 --- !u!1 &1435774073
 GameObject:
   m_ObjectHideFlags: 0
@@ -8223,6 +8453,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1435774077}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1435774077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8368,6 +8601,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1438553115}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1438553115
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8513,6 +8749,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1448670342}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1448670342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8703,6 +8942,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1561687020}
   healthBlock: 4
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1561687020
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8848,6 +9090,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1595067495}
   healthBlock: 4
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1595067495
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8993,6 +9238,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1663092712}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1663092712
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9138,6 +9386,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1718280522}
   healthBlock: 4
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1718280522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9283,6 +9534,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1719576503}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1719576503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9428,6 +9682,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1781296031}
   healthBlock: 4
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1781296031
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9480,6 +9737,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1791877345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1791877346}
+  - component: {fileID: 1791877347}
+  m_Layer: 0
+  m_Name: MaterialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1791877346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791877345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 471198524}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1791877347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791877345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e8a72240051f94395c8507b78b0b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultBlockSprite: {fileID: 21300000, guid: 59b91faf113caca41a381e260c7d724e, type: 3}
+  TNTBlockSprite: {fileID: 21300000, guid: 4c79de9238c355c4fa68adf196af8dca, type: 3}
+  PortalBlockSprite: {fileID: 21300000, guid: 62763dcf8eeb1db419eb998faa5e0253, type: 3}
+  DefaultBallSprite: {fileID: 21300000, guid: 1bc932a43ac4a3c4cae198ab8882f242, type: 3}
 --- !u!1 &1830357385
 GameObject:
   m_ObjectHideFlags: 0
@@ -9618,6 +9923,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1888206746}
   healthBlock: 2
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1888206746
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9763,6 +10071,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1905320400}
   healthBlock: 1
+  typeBlock: 1
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1905320400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9804,7 +10115,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 59b91faf113caca41a381e260c7d724e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c79de9238c355c4fa68adf196af8dca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10377,6 +10688,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1971318258}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1971318258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10522,6 +10836,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 1994518006}
   healthBlock: 4
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &1994518006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10667,6 +10984,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 2001510564}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &2001510564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10812,6 +11132,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 2031305826}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &2031305826
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10957,6 +11280,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 2044207732}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &2044207732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11204,6 +11530,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 2094354858}
   healthBlock: 10
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &2094354858
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11349,6 +11678,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 2128921139}
   healthBlock: 1
+  typeBlock: 0
+  anotherPortal: {fileID: 0}
+  isDetonated: 0
 --- !u!212 &2128921139
 SpriteRenderer:
   m_ObjectHideFlags: 0

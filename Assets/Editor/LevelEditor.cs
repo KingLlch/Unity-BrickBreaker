@@ -53,8 +53,9 @@ public class LevelEditor : EditorTool
 
             if (hit.collider != null && hit.collider.CompareTag("Block"))
             {
-                hit.collider.gameObject.GetComponent<Block>().NextLevelBlock();
+                BlocksManager.Instance.ChangeTypeBlock(hit.collider.gameObject.GetComponent<Block>());
             }
+
             else
             {
                 HideMarkers();
@@ -79,7 +80,18 @@ public class LevelEditor : EditorTool
 
     private void LeftClickMouse(Event _event)
     {
-        if (_event.type == EventType.MouseDown && _event.button == 0 && !pointSelected)
+        if (_event.type == EventType.MouseDown && _event.button == 0)
+        {
+            Ray ray = HandleUtility.GUIPointToWorldRay(_event.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+
+            if (hit.collider != null && hit.collider.CompareTag("Block"))
+            {
+                BlocksManager.Instance.NextLevelBlock(hit.collider.gameObject.GetComponent<Block>());
+            }
+        }
+
+        else if (_event.type == EventType.MouseDown && _event.button == 0 && !pointSelected)
         {
             selectedPoint = HandleUtility.GUIPointToWorldRay(_event.mousePosition).origin;
             pointSelected = true;

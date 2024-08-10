@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     {
         if (IsGameNeedStart)
         {
-            newBall.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 0.5f);
+            newBall.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1f);
         }
     }
 
@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
             Life--;
             UIManager.Instance.ChangeValueBalls(Life);
 
-            newBall = Instantiate(ball);
+            newBall = Instantiate(ball, Vector2.zero, Quaternion.identity, ballsGameObject.transform);
             balls.Add(newBall);
             ballRigitbody = newBall.GetComponent<Rigidbody2D>();
 
