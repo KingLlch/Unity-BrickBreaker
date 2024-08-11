@@ -103,15 +103,29 @@ public class GameManager : MonoBehaviour
 
         if (balls.Count == 0)
         {
-            Life--;
-            UIManager.Instance.ChangeValueBalls(Life);
-
-            newBall = Instantiate(ball, Vector2.zero, Quaternion.identity, ballsGameObject.transform);
-            balls.Add(newBall);
-            ballRigitbody = newBall.GetComponent<Rigidbody2D>();
-
-            IsGameNeedStart = true;
+            Restart();
         }
+    }
+
+    public void Restart()
+    {
+        if(balls.Count > 0)
+            for (int i = balls.Count - 1; i >= 0; i--)
+            {
+                GameObject ball = balls[i];
+
+                balls.Remove(ball);
+                Destroy(ball);
+            }
+
+        Life--;
+        UIManager.Instance.ChangeValueBalls(Life);
+
+        newBall = Instantiate(ball, Vector2.zero, Quaternion.identity, ballsGameObject.transform);
+        balls.Add(newBall);
+        ballRigitbody = newBall.GetComponent<Rigidbody2D>();
+
+        IsGameNeedStart = true;
     }
 
     public void DestroyBlock(Transform block)

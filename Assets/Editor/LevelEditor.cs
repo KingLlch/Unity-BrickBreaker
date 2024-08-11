@@ -89,51 +89,48 @@ public class LevelEditor : EditorTool
             {
                 BlocksManager.Instance.NextLevelBlock(hit.collider.gameObject.GetComponent<Block>());
             }
-        }
 
-        else if (_event.type == EventType.MouseDown && _event.button == 0 && !pointSelected)
-        {
-            selectedPoint = HandleUtility.GUIPointToWorldRay(_event.mousePosition).origin;
-            pointSelected = true;
-        }
-
-        else if (_event.type == EventType.MouseDown && _event.button == 0 && pointSelected && !isRotating)
-        {
-            Vector2 mousePosition = HandleUtility.GUIPointToWorldRay(_event.mousePosition).origin;
-            Vector2 direction = new Vector2(mousePosition.x, mousePosition.y) - selectedPoint;
-
-            selectedRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-            isRotating = true;
-        }
-
-        if (_event.type == EventType.MouseDown && _event.button == 0 && pointSelected && isRotating)
-        {
-            Ray ray = HandleUtility.GUIPointToWorldRay(_event.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-
-            GameObject block = Instantiate(Block);
-            block.transform.SetParent(GameObject.Find("Game/Blocks").transform);
-
-            if (hit.collider != null && hit.collider.CompareTag("Marker"))
+            else if (!pointSelected)
             {
-                Vector2 point = hit.collider.gameObject.transform.position;
-
-                block.transform.position = new Vector3(point.x, point.y, 0);
-                HideMarkers();
-                DrawMarkers(point, block);
-            }
-            else
-            {
-                block.transform.position = new Vector3(selectedPoint.x, selectedPoint.y, 0);
-                HideMarkers();
-                DrawMarkers(selectedPoint, block);
+                selectedPoint = HandleUtility.GUIPointToWorldRay(_event.mousePosition).origin;
+                pointSelected = true;
             }
 
-            block.transform.rotation = Quaternion.Euler(0, 0, selectedRotation);
+            else if (pointSelected && !isRotating)
+            {
+                Vector2 mousePosition = HandleUtility.GUIPointToWorldRay(_event.mousePosition).origin;
+                Vector2 direction = new Vector2(mousePosition.x, mousePosition.y) - selectedPoint;
 
-            Undo.RegisterCreatedObjectUndo(block, "Create Block");
-            pointSelected = false;
+                selectedRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+                isRotating = true;
+            }
+
+            if (pointSelected && isRotating)
+            {
+                GameObject block = Instantiate(Block);
+                block.transform.SetParent(GameObject.Find("Game/Blocks").transform);
+
+                if (hit.collider != null && hit.collider.CompareTag("Marker"))
+                {
+                    Vector2 point = hit.collider.gameObject.transform.position;
+
+                    block.transform.position = new Vector3(point.x, point.y, 0);
+                    HideMarkers();
+                    DrawMarkers(point, block);
+                }
+                else
+                {
+                    block.transform.position = new Vector3(selectedPoint.x, selectedPoint.y, 0);
+                    HideMarkers();
+                    DrawMarkers(selectedPoint, block);
+                }
+
+                block.transform.rotation = Quaternion.Euler(0, 0, selectedRotation);
+
+                Undo.RegisterCreatedObjectUndo(block, "Create Block");
+                pointSelected = false;
+            }
         }
     }
 
